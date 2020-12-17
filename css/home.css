@@ -1,0 +1,97 @@
+.content-left{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: initial;
+    /* background-color: darkgreen; */
+}
+
+
+.content-left p:first-child,
+.content-left p:last-child{
+    text-indent: 1rem;
+}
+
+.content-left p{
+    color: var(--font_code_color);
+    font-family: 'Sacramento', cursive;
+    font-size: 2rem;
+    text-indent: 5rem;
+}
+.content-left span{
+    color: var(--font_code_color);
+    font-family: 'Sacramento', cursive;
+    font-size: 2rem;
+    font-weight: normal;
+}
+.content-left h1{
+    color: var(--font_light_color);
+    font-family: 'Poppins', sans-serif;
+    margin-left: 8rem;
+    max-width: 45vw;
+    font-size: 3rem;
+}
+
+.content-left button{
+    background-color: unset;
+    width: 25rem;
+    height: 4rem;
+    margin-left: 8rem;
+    border: 3px solid var(--aquamarine);
+    color: var(--aquamarine);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.content-left button:hover{
+    background-color: var(--aquamarine);
+    color: var(--border_dark);
+    border-color: var(--border_dark);
+}
+
+.content-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* justify-content: space-evenly; */
+    /* align-items: center; */
+    width: 40%;
+    color: white;
+}
+
+.content-right p{
+    font-family: 'Poppins', sans-serif;
+    margin-left: 1.5rem;
+    font-size: 0.9rem;
+    max-width: 100%;
+}
+
+.content-right p:first-child,
+.content-right p:last-child{
+    margin-left: 0rem;
+}
+
+.content-right p:nth-child(7),
+.content-right p:nth-child(8),
+.content-right p:nth-child(14),
+.content-right p:nth-child(15),
+.content-right p:nth-child(16),
+.content-right p:nth-child(17){
+    margin-left: 3rem;
+}
+
+.content-right p span{
+    color: var(--pacific_blue);
+}
+.content-right p span:first-child{
+    color: var(--aquamarine);
+}
+
+@media(max-width: 760px){
+    .content-left{
+        /* waiting for the responsive  adjustment*/
+        background-color: yellow;
+    }
+}
