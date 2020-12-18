@@ -63,6 +63,7 @@ body{
 }
 .menu footer img:hover{
     border: 2px solid white;
+    background-color: white;
     border-radius: 10px;
 }
 .menu footer img+img:hover{
