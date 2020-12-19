@@ -86,8 +86,10 @@ body{
 
 .content{
     display: flex;
-    min-height: 100%;
-    height: clamp(648px, 100vh, 100vh);
+    /* min-height: 100%; */
+    /* height: clamp(648px, 100vh, 100vh); */
+    min-height: 100vh;
+    height: 100% !important;
     width: 94vw;
     margin-left: 6vw;
     background-color: var(--oxford_blue);

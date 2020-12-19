@@ -14,10 +14,10 @@
     margin-left: 8rem;
 }
 
-.content{
+/* .content{
     min-height: 100vh;
     height: 100% !important;
-}
+} */
 
 .content-right{
     display: flex;
