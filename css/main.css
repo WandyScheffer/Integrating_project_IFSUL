@@ -5,12 +5,15 @@
 
 body{
     display: flex;
+    /* background-color: green; */
 }
 
 .menu{
+    position: fixed;
     display: flex;
     flex-direction: column;
-    height: clamp(648px, 100vh, 100vh);
+    /* height: clamp(648px, 100vh, 100vh); */
+    height: 100vh;
     width: 6vw;
     background-color: var(--oxford_blue);
     border-right: 1.8px solid black;
@@ -19,7 +22,8 @@ body{
 }
 .menu header{
     display: flex;
-    height: clamp(10%, 15vh, 15vh);
+    /* height: clamp(10%, 15vh, 15vh); */
+    height: 15vh;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -40,7 +44,8 @@ body{
 .menu main ul li{
     display: flex;
     justify-content: center;
-    margin-bottom: clamp(20px, 2vh, 2vh) !important;
+    /* margin-bottom: clamp(20px, 2vh, 2vh) !important; */
+    margin-bottom: 2vh !important;
 }
 .menu main ul li img{
     box-sizing: border-box;
@@ -55,13 +60,16 @@ body{
 .menu footer{
     display: flex;
     flex-direction: column;
-    height: clamp(150px, 15vh, 15vh);
+    /* height: clamp(150px, 15vh, 15vh); */
+    height: 15vh;
     justify-content: space-around;
+    margin-bottom: 2vh;
 }
 .menu footer img{
     border: 2px solid transparent;
     cursor: pointer;
-    margin-bottom: clamp(20px, 2vh, 2vh) !important;
+    /* margin-bottom: clamp(20px, 2vh, 2vh) !important; */
+    margin-bottom: 2vh;
 }
 .menu footer img:hover{
     border: 2px solid white;
@@ -78,7 +86,43 @@ body{
 
 .content{
     display: flex;
+    min-height: 100%;
     height: clamp(648px, 100vh, 100vh);
     width: 94vw;
+    margin-left: 6vw;
     background-color: var(--oxford_blue);
+}
+
+.content-left{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: initial;
+}
+
+
+.content-left p:first-child,
+.content-left p:last-child{
+    text-indent: 1rem;
+}
+
+.content-left p{
+    color: var(--font_code_color);
+    font-family: 'Sacramento', cursive;
+    font-size: 2rem;
+    text-indent: 5rem;
+}
+.content-left span{
+    color: var(--font_code_color);
+    font-family: 'Sacramento', cursive;
+    font-size: 2rem;
+    font-weight: normal;
+}
+.content-left h1{
+    color: var(--font_light_color);
+    font-family: 'Poppins', sans-serif;
+    margin-left: 8rem;
+    max-width: 45vw;
+    font-size: 3rem;
 }

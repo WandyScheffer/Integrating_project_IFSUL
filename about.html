@@ -6,7 +6,7 @@
     <link rel="shortcut icon" href="./img/icons/logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="./css/root.css">
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/about.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
@@ -40,20 +40,51 @@
             <p> &lt body &gt  </p> 
             <h1>
                 <span> &lt h1 &gt </span>  
-                sobre mim
+                Sobre mim
                 <span> &lt /h1 &gt  </span>
             </h1> 
+            
+            <p>Para me descrever de forma um pouco pessoal, posso dizer que adoro filmes de ficção 
+            cientifica e fantasia, amo cachorros, dias de chuva e o frio. Também preciso dizer que 
+            não vivo sem música, até por este motivo esta página toca (de forma aleatória) algumas 
+            músicas pré selecionadas que eu gosto, pois me parece uma das melhores maneiras de me
+            conhecer um pouco.</p>
+
+            <p>Quanto a profissão, sou basicamente um entusiasta da área de tecnologia, tendo por 
+            qualidades a proatividade e a obstinação para resolução de desafios encontrados, por 
+            estes motivos escolhi trabalhar com programação. Busco sempre adquirir maiores 
+            conhecimentos na área de TI, deste modo estando sempre aberto a experiências nessa área.</p>
+            
+
             <p> &lt /body &gt </p>
             <p> &lt /html &gt </p>
         </div>
 
         <div class="content-right">
-            <h2>deixar a minha cara... colocar musica nesta página...</h2>
-            <div class="informations">
-            
+
+            <div class="music_container">
+                <h1>Música tocando:</h1>
+                <h2 id="music_title"></h2>
+                <div class="control">
+                    <img id="left_speaker" src="./img/icons/speaker_low.svg" alt="" width="8%">
+                    <input onchange="volumeOrMute(event)" type="range" min="0" max="100" value="50">
+                    <img id="right_speaker" src="./img/icons/speaker_loud.svg" alt="" width="9%">
+                </div>
+                <div id="ytplayer"></div>
             </div>
+
+            <div class="snake_container">
+                <h2>Enquanto curte a música, pode passar o tempo jogando <i>snake</i>... basta usar as setas</h2>
+                <canvas id='tela_jogo' width="400" height="400"></canvas>
+                <div class="game_info">
+                    <b id="level">Level: </b> <b id="score">Score: </b>
+                </div>
+            </div>
+
         </div>
     </main>
-    
+
+    <script src="./js/about.js"></script>
+    <script src="./js/functions/game.js"></script>
 </body>
 </html>
