@@ -1,3 +1,24 @@
+.mobile_button{
+    display: none;
+}
+.close{
+    background-color: unset;
+    width: 25rem;
+    height: 4rem;
+    margin-left: 8rem;
+    border: 3px solid var(--aquamarine);
+    color: var(--aquamarine);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.close:hover{
+    background-color: var(--aquamarine);
+    color: var(--border_dark);
+    border-color: var(--border_dark);
+}
+
 .content-left button{
     background-color: unset;
     width: 25rem;
@@ -53,8 +74,66 @@
 }
 
 @media(max-width: 948px){
-    /* .content-left{ */
+    body{
+        background-color: var(--oxford_blue);
+        overflow-x: hidden;
+    }
+    .content{
+        overflow-x: hidden;
+    }
+    .content-left{
         /* waiting for the responsive  adjustment*/
         /* background-color: yellow; */
-    /* } */
+        width: 100% !important;
+        overflow-x: hidden;
+        /* background-color: tomato; */
+    }
+    .content-left h1{
+        text-align: center;
+        font-size: 2.4rem;
+        margin: 0 4% 0 4%;
+        max-width: 100%;
+        /* background-color: tomato; */
+    }
+    .mobile_button{
+        display: initial;
+    }
+    .content-left button{
+        background-color: unset;
+        width: 20rem;
+        height: 4rem;
+        margin: 10% auto;
+        border: 3px solid var(--aquamarine);
+        color: var(--aquamarine);
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.6rem;
+        transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+    }
+    .close{
+        width: 20rem;
+        height: 4rem;
+        margin: 10% auto;
+
+    }
+    .content-right{
+        position: absolute;
+        background-color: var(--oxford_blue);
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        transform: translateX(100%);
+        /* display: none; */
+    }
+
+    .ative-in-mobile{
+        transition: transform 1500ms; transform: translateX(0%);
+    }
+    .desactive-in-mobile{
+        transition: transform 1500ms; transform: translateX(100%);
+    }
+
+    .content-right .informations{
+        width: 80%;
+    }
 }

@@ -16,8 +16,15 @@
 }
 
 @media(max-width: 948px){
-    /* .content-left{ */
+    .content-left{
         /* waiting for the responsive  adjustment*/
-        /* background-color: yellow; */
-    /* } */
+        width: 100% !important;
+    }
+    .content-left .works{
+        margin-left: 10%;
+    }
+
+    .content-left .works p{
+        font-size: 1.0rem;
+    }
 }

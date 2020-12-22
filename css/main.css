@@ -139,12 +139,13 @@ body{
 
 @media(max-width: 948px){
     body{
+        width: 100vw;
         flex-direction: column;
         overflow-x: hidden;
     }
     .menu{
         position: fixed;
-        z-index: 2;
+        z-index: 10;
         height: 10vh;
         width: 100vw;
         margin: 0;
@@ -175,7 +176,7 @@ body{
 
     .menu_mobile{
         position: fixed;
-        z-index: 1;
+        z-index: 9;
         display: flex;
         flex-direction: column;
         height: 100vh;
