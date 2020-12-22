@@ -52,9 +52,9 @@
     color: var(--aquamarine);
 }
 
-@media(max-width: 900px){
-    .content-left{
+@media(max-width: 948px){
+    /* .content-left{ */
         /* waiting for the responsive  adjustment*/
-        background-color: yellow;
-    }
+        /* background-color: yellow; */
+    /* } */
 }

@@ -14,3 +14,10 @@
     margin: 1rem 0rem 1rem 0rem;
     /* background-color: hotpink; */
 }
+
+@media(max-width: 948px){
+    /* .content-left{ */
+        /* waiting for the responsive  adjustment*/
+        /* background-color: yellow; */
+    /* } */
+}

@@ -109,3 +109,9 @@ input[type=number] {
     border-color: var(--border_dark);
 }
 
+@media(max-width: 948px){
+    /* .content-left{ */
+        /* waiting for the responsive  adjustment*/
+        /* background-color: yellow; */
+    /* } */
+}

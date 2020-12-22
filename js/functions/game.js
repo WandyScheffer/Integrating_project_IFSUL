@@ -200,56 +200,56 @@ window.onload = function () {//quando carregar a janela
                 break;
 
             //para setas
-            case 38://up
+            // case 38://up
                 
-                    if (vy != 0) {
-                        vy = vy;
-                        vx = 0
-                    } else {
-                        vy = -velocidade;
-                        vx = 0;
-                    }
+            //         if (vy != 0) {
+            //             vy = vy;
+            //             vx = 0
+            //         } else {
+            //             vy = -velocidade;
+            //             vx = 0;
+            //         }
                 
-                break;
+            //     break;
 
-            case 37://left
-                
-
-                    if (vx != 0) {
-                        vx = vx;
-                        vy = 0
-                    } else {
-                        vx = -velocidade;
-                        vy = 0;
-                    }
-                
-                break;
-
-            case 40://down
+            // case 37://left
                 
 
-                    if (vy != 0) {
-                        vy = vy;
-                        vx = 0
-                    } else {
-                        vy = velocidade;
-                        vx = 0;
-                    }
+            //         if (vx != 0) {
+            //             vx = vx;
+            //             vy = 0
+            //         } else {
+            //             vx = -velocidade;
+            //             vy = 0;
+            //         }
                 
-                break;
+            //     break;
 
-            case 39://right
+            // case 40://down
                 
 
-                    if (vx != 0) {
-                        vx = vx;
-                        vy = 0
-                    } else {
-                        vx = velocidade;
-                        vy = 0;
-                    }
+            //         if (vy != 0) {
+            //             vy = vy;
+            //             vx = 0
+            //         } else {
+            //             vy = velocidade;
+            //             vx = 0;
+            //         }
                 
-                break;
+            //     break;
+
+            // case 39://right
+                
+
+            //         if (vx != 0) {
+            //             vx = vx;
+            //             vy = 0
+            //         } else {
+            //             vx = velocidade;
+            //             vy = 0;
+            //         }
+                
+            //     break;
 
         
             default:

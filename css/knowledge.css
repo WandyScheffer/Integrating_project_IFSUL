@@ -45,3 +45,17 @@
     /* justify-content: center; */
     /* align-items: center; */
 }
+
+@media(max-width: 948px){
+    .content-left{
+        /* waiting for the responsive  adjustment*/
+        width: 100% !important;
+    }
+    .content-left .knowledge{
+        margin-left: 10%;
+    }
+
+    .content-left .knowledge p{
+        font-size: 1.0rem;
+    }
+}
