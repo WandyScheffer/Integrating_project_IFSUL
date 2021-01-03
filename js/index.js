@@ -1,7 +1,3 @@
-window.onload = () => {
-    alert("Está aplicação ainda está em desenvolvimento, logo algumas funcionalidades ainda não estão completas.");
-}
-
 var resume = false;
 
 function openCloseResume() {
