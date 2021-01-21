@@ -1,4 +1,4 @@
-window.onload = () => {
+const openWarning = () => {
     
     if (sessionStorage.getItem("noticed")) {
         document.getElementsByClassName("notice_back")[0].style = "display: none;"
@@ -28,6 +28,8 @@ window.onload = () => {
     }
 
 }
+
+openWarning();
 
 function closeNotice() {
     document.getElementsByClassName("notice_back")[0].style = "display: none;"
